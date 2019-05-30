@@ -2,15 +2,15 @@
 <!--Remember that here, in XML, you can create your own tags! And that your html scripts should reflect these tags.-->
 <CATALOG>
      <FILM>
-        <Car Park>North West Street Car Park</Car Park> 
+        <CarPark>North West Street Car Park</CarPark> 
         <Location> Aberdeen City, Aberdeenshire </Location> 
     </FILM>
     <FILM>
-        <Car Park>Union Sq Car Park</Car Park> 
+        <CarPark>Union Sq Car Park</CarPark> 
         <Location> Aberdeen City, Aberdeenshire </Location>
     </FILM>
     <FILM>
-        <Car Park>Bon Accord City Center Car Park</Car Park> 
+        <CarPark>Bon Accord City Center Car Park</CarPark> 
         <Location> Aberdeen City, Aberdeenshire </Location>
     </FILM>
 </CATALOG>
