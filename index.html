@@ -293,23 +293,19 @@
             function myFunction(xml) {
               var i;
               var xmlDoc = xml.responseXML;
-              var table="<tr><th>Film Name</th><th>Director</th></tr>";
+              var table="<tr><th>Car Park</th><th>Location</th></tr>";
               var x = xmlDoc.getElementsByTagName("FILM");
               for (i = 0; i <x.length; i++) { 
                 table += "<tr><td>" +
-                x[i].getElementsByTagName("FILM-NAME")[0].childNodes[0].nodeValue +         //node and child value is telling this script to gather all information underneath "title"
+                x[i].getElementsByTagName("CarPark")[0].childNodes[0].nodeValue +         //node and child value is telling this script to gather all information underneath "title"
                 "</td><td>" +
-                x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue +
-                "</td></tr>" +
-                 x[i].getElementsByTagName("MAIN-STAR")[0].childNodes[0].nodeValue +
-                "</td></tr>" +
-                  x[i].getElementsByTagName("CO-STAR")[0].childNodes[0].nodeValue +
+                x[i].getElementsByTagName("Location")[0].childNodes[0].nodeValue +
                 "</td></tr>";
               }
               document.getElementById("results").innerHTML = table;
             }
         </script>
-			 <h1>Below is our Film Catalog</h1>
+			 <h2>Find Your recent parks below</h2>
         <button id="catalog" onclick="filmCatalog()">Nearby Parking Spaces</button>
         <table id="results"></table>
 			<div class="text-centered">
