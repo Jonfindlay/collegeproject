@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* AUTOPARK CSS SEAN MAHONEY 2019 */
+
+body{ 								/*BODY STYLING INCLUDING FONT*/
+	margin: 0;
+	padding: 0;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 100;
+	font-style: normal;
+}
+#splashscreen{						/*FIRST PAGE STYLING*/
+	z-index: 1;
+	display: block;
+}
+#loginpage{							/*LOGIN PAGE STYLING*/
+	display: none;
+	z-index: 2;
+}
+#chooseCar{
+	display: none;					/*CHOOSE CAR PAGE STYLING*/
+	z-index: 3;
+}
+#sign-up{							/*SIGN UP PAGE STYLING*/
+	display: none;
+	z-index: 2;
+}
+#password-submit{
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+#create-password{					/*CREATE PASSWORD STYLING*/
+	display: none;
+	z-index: 3;
+}
+#connect{							/*CONNECT PAGE STYLING*/
+	display: none;
+	z-index: 4;
+}
+#connect-submit{					/*HIDE THE BUTTON*/			
+	display: none;
+}
+#chooseCar2{						/*CHOOSE CAR 2 STYLING*/
+	display: none;
+}
+#parking-options{					/*CHOOSE CAR 2 STYLING*/
+	display: none;
+}
+#quick-nearby-section{				/*QUICK NEARBY SECTION STYLING*/
+	display: none;
+}
+#cheap-nearby-section{				/*CHEAP NEARBY SECTION STYLING*/
+	display: none;
+}
+#recent-section{					/*RECENT SECTION STYLING*/
+	display: none;
+}
+#main-page{							/*MAIN - PAGE STYLING*/
+	display: none;
+}
+#RSS-FEED{							/*RSS FEED STYLING*/
+	display: none;
+}
+#custom-parking{					/*CUSTOM PARKING PAGE STYLING*/
+	display: none;
+}
+#summon-vehicle{
+	display: none;
+}
+#arrived{
+	display: none;
+}
+nav{								/*NAVIGATION STYLING FOR BACK BUTTONS AND MENU BUTTON*/
+	position: fixed;				
+}
+.text-centered{						/*CENTER TEXT WITH THIS CLASS*/
+	text-align: center;
+	padding: 30px 30px;
+}
+.back-button img{					/*BACK BUTTON IMAGE*/
+	width: 40px;
+	padding: 20px;
+}
+.main-menu img{						/*MAIN-MENU IMAGE*/
+	width: 70px;
+	height: auto;
+}
+.logoholderA{						/*CONTAINER FOR LOGO ON SPLASH SCREEN*/
+	padding: 100px 0 30px;
+	max-width: 500px;
+	width: 80%;
+	margin: 0 auto;
+}
+.logoholder{						/*CONTAINER FOR LOGOS*/
+	padding-top: 100px;
+	width: 200px;
+	margin: 0 auto;
+}
+.logo img{							/*LOGO IMAGE STYLING*/
+	width: 100%;
+	height: auto;
+}
+.button-spacing{					/*CONTAINER FOR BUTTONS INCLUDING SPACING*/
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.smaller-button{
+	margin: 0 auto;
+	width: 60px;
+	text-align: center;
+	background-color: #72CDD4;
+	color: #FFFFFF;
+	padding: 20px;
+}
+.blueButton{						/*DEFAULT BLUE BUTTON*/
+	margin: 0 auto;
+	width: 80%;
+	max-width: 500px;
+	text-align: center;
+	background-color: #72CDD4;
+	color: #FFFFFF;
+	padding: 20px;
+}
+.blueButton:hover{					/*BLUE BUTTON HOVER STYLING*/
+	background-color: #353535;
+	cursor: pointer;
+}
+.greyButton{						/*DEFAULT GREY BUTTON*/
+	margin: 0 auto;
+	width: 80%;
+	max-width: 500px;
+	text-align: center;
+	background-color: #5F6F75;
+	color: #FFFFFF;
+	padding: 20px;
+}
+.greyButton:hover{					/*GREY BUTTON HOVER STYLING*/
+	background-color: #353535;
+	cursor: pointer;
+}
+.content-container{					/*CONTAINER FOR MAIN CONTENT*/
+	margin: 0 auto;
+	width: 80%;
+	max-width: 500px;
+}
+.content-container img{				
+	width: 100%;
+}
+.split{								/*SPLIT CONTENT 50/50 LEFT AND RIGHT*/
+	width: 50%;
+	height: auto;
+	float: left;
+	text-align: center;
+}
+.split img{							/*SPLIT SECTIONS IMAGE STYLING*/
+	width: 100%;
+	height: auto;
+}
+.form-container{					/*CONTAINER FOR FORMS*/
+	width: 80%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding-top: 80px;
+	text-align: center;
+}
+input[type=text]{					/*STYLING FOR FORM TEXT FIELDS*/
+	border: 2px solid #65C8D0;
+  	border-radius: 50px;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+input[type=password]{				/*STYLING FOR FORM PASSWORD FEILDS*/
+	border: 2px solid #65C8D0;
+  	border-radius: 50px;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+.verticalLine-container{			/*VERTICAL LINE CONTAINER*/
+    margin: 20px auto 20px;
+    width: 100%;
+    height: 30px;
+    position:relative;
+    text-align:center
+}
+.verticalLine {						/*VERTICAL LINE*/
+  	content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid #8A8A8A;
+    transform: translate(-50%);
+}
+button{								/*FORM BUTTON STYLING*/
+	background-color: #65C8D0;
+  	border: none;
+  	color: white;
+  	padding: 16px 32px;
+  	text-decoration: none;
+  	cursor: pointer;
+	margin-top: 50px;
+}
+.carlink{							/*CHOOSE A VEHICLE LINKS*/						
+	text-decoration: none;
+	margin: 50px 0px;
+}
+.carlink img:hover{					/*CHOOSE A VEHICLE LINKS*/						
+	opacity: 0.5;
+	cursor: pointer;
+}
+.carlink img{						/*CHOOSE A VEHICLE LINK IMAGE STYLING*/				
+	width: 100%;
+	height: auto;
+}
+									/*CSS FOR SIGN UP PAGE*/
+.ap-logo{							/*CONTAINER FOR MAIN LOGO*/
+	width: 40%;
+	margin-left: 30%;
+}
+
+.ap-logo img{						/*LOGO IMG STYLING*/
+	width: 100%;
+}
+
+.first-name{						/*FORM STYLING SIGN UP PAGE*/
+	width:70%;
+	background:white; 
+	margin-top: 2%;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	padding: 1% 2% 1% 2%;
+	border-style:solid;
+	border-radius: 100px;
+	border-color:#279F9D;
+	box-shadow: 0px 5px 10px 1px #C5C5C5;
+	text-align: justify;
+}
+
+.first-name h2{						/*FIRST-NAME HEADER STYLING*/
+	text-align: center;
+}
+
+.last-name{							/*FORM STYLING SIGN UP PAGE*/
+	width:70%;
+	background:white; 
+	margin-top: 2%;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	padding: 1% 2% 1% 2%;
+	border-style:solid;
+	border-radius: 100px;
+	border-color:#279F9D;
+	box-shadow: 0px 5px 10px 1px #C5C5C5;
+	text-align: justify;
+}
+
+.last-name h2{
+	text-align: center;
+}
+
+.email{								/*FORM STYLING SIGN UP PAGE*/
+	width:70%;
+	background:white; 
+	margin-top: 2%;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	padding: 1% 2% 1% 2%;
+	border-style:solid;
+	border-radius: 100px;
+	border-color:#279F9D;
+	box-shadow: 0px 5px 10px 1px #C5C5C5;
+	text-align: justify;
+}
+
+.email h2{
+	text-align: center;
+}
+
+.phone{								/*FORM STYLING SIGN UP PAGE*/
+	width:70%;
+	background:white; 
+	margin-top: 2%;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	padding: 1% 2% 1% 2%;
+	border-style:solid;
+	border-radius: 100px;
+	border-color:#279F9D;
+	box-shadow: 0px 5px 10px 1px #C5C5C5;
+	text-align: justify;
+}
+
+.phone h2{
+	text-align: center;
+}
+
+.welcome {							/*FORM STYLING SIGN UP PAGE*/					
+	width: 60%
+}
+#loadinggif{
+	display: none;
+}
+#connect-go2{
+	margin-top: 0px;
+}
+#loadinggif2{
+	display: none;
+}
+#car-parked{
+	display: none;
+}
+.calculator__bill{
+	display: none;
+}
+.map1{
+	width: 100%;
+	overflow: hidden;
+}
+.map1 iframe{
+	width: 100%;
+}
+.navm{
+	width: 100%;
+	height: 100vh;
+	background-color: #5F6F75;
+	display: none;
+	position: absolute;
+}
+.navm a{
+	display: block;
+	width: 100%;
+	padding-top: 30px;
+	font-size: 1em;
+	text-align: center;
+	line-height: 60px;
+	text-decoration: none;
+	color: #ffffff;
+}
+.navm a:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+.close-icon{
+	width: 30px;
+	height: auto;
+}
+.close-icon img{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+}
+hr{
+	width: 50%;
+	margin-top: 40px;
+}

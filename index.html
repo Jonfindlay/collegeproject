@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>AUTO PARK: Park your car automatically.</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="javascript/script.js"></script>
+</head>
+
+<body>
+	<div id="splashscreen">			<!---FIRST PAGE CODE STARTS SEAN MAHONEY -->
+		<div class="logoholderA">
+			<div class="logo"><img src="images/A-PARK-LOGO.png" alt="logo"></div>
+		</div>
+		<div class="text-centered">
+			<p>PARK YOUR CAR AUTOMATICALLY WITH AUTO PARK!</p>
+		</div>
+		<div class="button-spacing">
+			<div class="greyButton">
+				<h2>LOG IN</h2>
+			</div>
+		</div>
+		<div class="button-spacing">
+			<div class="blueButton">
+				<h2>SIGN UP</h2>
+			</div>
+		</div>
+		<div class="content-container">
+			<div class="split">
+				<p>In association with</p>
+			</div>
+			<div class="split">
+				<img src="images/ford-logo-small.png" alt="FORD">
+			</div>
+		</div>
+	</div>							<!---FIRST PAGE CODE ENDS SEAN MAHONEY -->
+	<div id="loginpage"> 			<!---LOGIN PAGE CODE STARTS SEAN MAHONEY-->
+		<nav>
+			<a class="back-button" id="back-button1" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="logoholder">
+			<div class="logo"><img src="images/apark-logo.png" alt="logo"></div>
+		</div>
+		<div class="form-container">
+			<form>
+				<input type = "text" name="mailuid" placeholder="Username or E-mail...">
+				<input type = "password" name="pwd" placeholder="Password...">
+				<div class="verticalLine-container">
+					<div class="verticalLine"></div>
+				</div>
+			</form>
+			<button type="submit" name="login-submit" id="go-button-one">GO!</button>
+			<p>Don't have an account? </p>
+			<a id="signupalternate" href="#">Sign Up</a>
+		</div>
+	</div>							<!---LOGIN PAGE CODE ENDS SEAN MAHONEY-->
+	<div id="sign-up">				<!--SIGN UP PAGE STARTS-->
+		<nav>
+			<a class="back-button" id="back-button3" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="logoholder">
+			<div class="ap-logo">
+				<img src="images/apark-logo.png" alt="auto park logo">
+			</div>
+		</div>
+		<div class="text-centered">
+			<p>Welcome to AUTO PARK! </p> <p>We just need a few details to get you up and running.</p>
+		</div>
+		<div class="form-container">
+			<form>
+				<input type = "text" name="mailuid" placeholder="First Name...">
+				<input type = "text" name="pwd" placeholder="Last Name...">
+				<input type = "text" name="pwd" placeholder="E-mail Address...">
+				<input type = "text" name="pwd" placeholder="Phone Number...">
+			</form>
+			<button id="sign-up-submit" type="submit"  name="sign-up-submit">GO!</button>
+			<div class="verticalLine-container">
+				<div class="verticalLine"></div>
+			</div>
+			<p>Already have an account? </p>
+			<a id="go-to-log-in"  style="padding-bottom: 50px;">Log In</a>
+		</div>		
+	</div>							<!--SIGN UP PAGE ENDS-->
+	<div id="create-password">		<!--CREATE PASSWORD PAGE STARTS-->
+		<nav>
+			<a class="back-button" id="back-button4" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="text-centered">
+			<h2>Choose a Password</h2>
+		</div>
+		<div class="text-centered">
+			<p>Make It something you will remember, but not too easy to guess.</p>
+			<p>Try to use uppercase and lowercase!</p>
+		</div>
+		<div class="form-container">
+			<form>
+				<input type = "text" name="password" placeholder="Password...">
+				<input type = "text" name="re-enter-password" placeholder="Re-enter Password...">
+				<p> choose a user name</p>
+				<input type = "text" name="username" placeholder="Username...">
+			</form>
+			<button id="password-submit" type="submit"  name="sign-up-submit">GO!</button>
+		</div>		
+	</div>							<!--CREATE PASSWORD PAGE ENDS-->
+	<div id="connect">				<!--CONNECT PAGE STARTS-->
+		<nav>
+			<a class="back-button" id="back-button5" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="text-centered">
+			<h2>Connect</h2>
+		</div>
+		<div class="text-centered">
+			<p>Please navigate to the AUTO PARK APP within your cars infotainment. and select connect.</p>
+			<div class="content-container">
+				<button id="connect-go" type="submit"  name="sign-up-submit">CONNECT!</button>
+				<div id="loadinggif">
+					<img src="images/Loading_2.gif" alt="connect logo">
+					<p>Connecting...</p>
+				</div>
+			</div>
+		</div>	
+		<div class="form-container">
+			<div class="content-container">
+				<button id="connect-submit" type="submit"  name="sign-up-submit">Continue</button>
+			</div>
+		</div>
+	</div>							<!---CONNECT PAGE ENDS-->
+	<div id="chooseCar">			<!---CHOOSE CAR CODE STARTS SEAN MAHONEY-->
+		<nav>
+			<a class="back-button" id="backbutton2" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="text-centered">
+			<h2>CHOOOSE YOUR VEHICLE</h2>
+		</div>
+		<div class="content-container">
+			<a class="carlink" id="ford-focus"><img src="images/ford-focus.PNG" alt="ford-focus"></a>
+			<div class="text-centered">
+				<p>PARK MY FORD FOCUS</p>
+			</div>
+			<a class="carlink" id="mustang"><img src="images/ford-mustang.PNG" alt="mustang"></a>
+			<div class="text-centered">
+				<p>PARK MY MUSTANG</p>
+			</div>
+			<a class="carlink" id="model-s"><img src="images/tesla-model-s.PNG" alt="Tesla model s"></a>
+			<div class="text-centered">
+				<p>PARK MY MODEL S</p>
+			</div>
+		</div>
+	</div>							<!---CHOOSE CAR CODE ENDS SEAN MAHONEY-->
+	<div id="chooseCar2">			<!---CHOOSE CAR SET UP SECTION CODE STARTS SEAN MAHONEY-->
+		<nav>
+			<a class="back-button" id="backbutton6" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="text-centered">
+			<h2>Set Up</h2>
+			<p>Please choose your vehicle form the list below.</p>
+			<p style="color: #72CDD4">PLEASE NOTE!</p>
+			<p style="color: #72CDD4">Only the cars listed are currently supported</p>
+		</div>
+		<div class="content-container">
+			<a class="carlink" id="ford-focus2"><img src="images/ford-focus.PNG" alt="ford-focus"></a>
+			<div class="text-centered">
+				<p>SET UP MY FORD FOCUS</p>
+			</div>
+			<a class="carlink" id="mustang2"><img src="images/ford-mustang.PNG" alt="mustang"></a>
+			<div class="text-centered">
+				<p>SET UP MY MUSTANG</p>
+			</div>
+			<a class="carlink" id="fiesta"><img src="images/ford-fiesta.png" alt="Ford Fiesta"></a>
+			<div class="text-centered">
+				<p>SET UP MY FIESTA</p>
+			</div>
+			<a class="carlink" id="model-s2"><img src="images/tesla-model-s.PNG" alt="Tesla model s"></a>
+			<div class="text-centered">
+				<p>SET UP  MY MODEL S</p>
+			</div>
+			<a class="carlink" id="model-3"><img src="images/tesla-model-3.png" alt="Tesla model 3"></a>
+			<div class="text-centered">
+				<p>SET UP MY MODEL 3</p>
+			</div>
+			<a class="carlink" id="model-X"><img src="images/tesla-model-x.png" alt="Tesla model X"></a>
+			<div class="text-centered">
+				<p>SET UP MY MODEL X</p>
+			</div>
+		</div>
+	</div>							<!---CHOOSE CAR SET UP SECTON CODE ENDS SEAN MAHONEY-->
+	<div id="parking-options">		<!--PARKING OPTIONS STARTS-->
+		<nav>
+			<a class="back-button" id="backbutton7" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="text-centered">
+			<h2>CHOOOSE AN OPTION</h2>
+		</div>
+		
+		<div class="button-spacing">
+			<div class="greyButton" id="quick-nearby">
+				<h2>QUICK NEARBY PARKING</h2>
+			</div>
+		</div>
+		
+		<div class="button-spacing">
+			<div class="greyButton" id="cheap-nearby">
+				<h2>CHEAP NEARBY PARKING</h2>
+			</div>
+		</div>
+		
+		<div class="button-spacing">
+			<div class="greyButton" id="recent-parking">
+				<h2>RECENT PARKING</h2>
+			</div>
+		</div>
+		
+		<div class="button-spacing">
+			<div class="blueButton" id="custom-parking-button">
+				<h2>CUSTOM PARKING</h2>
+			</div>
+		</div>
+		
+	</div>								<!--PARKING OPTIONS ENDS-->								
+	<div id="quick-nearby-section">		<!--QUICK NEARBY PARKING STARTS-->	
+		<nav>
+			<a class="back-button" id="backbutton8" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="text-centered">
+			<h2>QUICK NEARBY</h2>
+			<p>Your vehicle will then make its way to the nearest car park</p>
+			<h3>Gallowgate Car Park</h3>
+		</div>
+		<div class="content-container">
+			<img src="images/nearby-map.png" alt="Gallowgate Car Park">
+			<div class="text-centered">
+				<p>Cost per hour</p>
+				<p>£ 2.50</p>
+			</div>
+			<div class="blueButton" id="confirm-nearby">
+				<h2>CONFIRM</h2>
+			</div>
+			<div class="button-spacing">
+				<div class="greyButton" id="confirm-custom1">
+					<h2>CUSTOM</h2>
+				</div>
+			</div>
+		</div>
+	</div>								<!--QUICK NEARBY PARKING ENDS-->
+	<div id="cheap-nearby-section">		<!--CHEAP NEARBY PARKING STARTS-->	
+		<nav>
+			<a class="back-button" id="backbutton9" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="text-centered">
+			<h2>CHEAP NEARBY</h2>
+			<p>Your vehicle will then make its way to the cheapest car park</p>
+			<h3>West North Street Car Park</h3>
+		</div>
+		<div class="content-container">
+			<img src="images/cheap-map.png" alt="Gallowgate Car Park">
+			<div class="text-centered">
+				<p>Cost per 2 hours</p>
+				<p>£ 2.45</p>
+			</div>
+			<div class="blueButton" id="confirm-cheap">
+				<h2>CONFIRM</h2>
+			</div>
+			<div class="button-spacing">
+				<div class="greyButton" id="confirm-custom2">
+					<h2>CUSTOM</h2>
+				</div>
+			</div>
+		</div>
+	</div>								<!--CHEAP NEARBY PARKING ENDS-->
+	<div id="recent-section">			<!--RECENT PARKING STARTS-->	
+		<nav>
+			<a class="back-button" id="backbutton10" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="text-centered">
+			<h2>RECENT PARKING</h2>
+			<p>Click below to see a list of recent car parks</p>
+		</div>
+		<div class="content-container">
+			<!--XML CODE WILL GO HERE-->
+			<div class="text-centered">
+				<h3>Click confirm and your vehicle will navigate to the most recent car park!</h3>
+			</div>
+		</div>
+		<div class="button-spacing">
+			<div class="blueButton" id="confirm-recent">
+				<h2>CONFIRM</h2>
+			</div>
+		</div>
+		<div class="greyButton" id="confirm-custom3">
+			<h2>CUSTOM</h2>
+		</div>
+	</div>								<!--RECENT PARKING ENDS-->
+<div id="custom-parking">				<!--CUSTOM PARKING STARTS-->
+		<nav>
+			<a class="back-button" id="backbutton11" href="#"><img src="images/Back-Button2.png" alt="back-button"></a>
+		</nav>
+		<div class="text-centered">
+			<h2>CHOOSE A LOCATION</h2>
+		</div>	
+	<div class="content-container">
+	<div class="map1">
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=14wXYzfooMYD7J53fIve_vDvhBs4GEF8v" height="480"></iframe>
+	</div>
+<div class="price">
+		<form class="calculator">
+				<div class="calculator__row">
+						<input type="text" id="bill" class="calculator__bill" value="2.5" required/>
+				</div>
+				<div class="text-centered">
+				<div class="calculator__row">
+						<label for="tip">LENGTH OF STAY: <span class="tip-amount"></span></label>
+						<input type="range" min="0" max="12" value="0" step="1" class="calculator__tip" id="tip" required/>
+				</div>
+				</div>
+				<div class="text-centered">
+				<div class="calculator__row">
+						<h2 class="calculator__info">TOTAL PRICE: <span class="calculator__result"></span></h2>
+				</div>
+				</div>
+		</form>
+		<div class="button-spacing">
+			<div class="blueButton" id="confirm-custom">
+				<h2>CONFIRM</h2>
+			</div>
+		</div>
+	</div>
+		
+	</div>
+</div>									<!--CUSTOM PARKING ENDS!-->
+	<div id="main-page">				<!--MAIN PAGE STARTS HERE!-->
+		<nav>
+			<a class="main-menu" id="main-menu" href="#"><img src="images/menu.png" alt="menu"></a>
+		</nav>
+		<div class="navm" id="navm">	
+			<div class="close-icon" id="close-icon">
+				<img src="images/close.png" alt="close-menu">
+			</div>
+			<a href="#" id="latest-news-button">Latest News</a>
+			<hr>
+			<a href="#" id="dashboard-button">Dashboard</a>
+			<hr>
+			<a href="index.html">Log Out</a>
+		</div>
+		<div class="text-centered">
+			<h2>Dashboard</h2>
+			<p>VEHICLE STATUS</p>
+		</div>
+		<div class="content-container">
+			<div id="loadinggif2">
+				<img src="images/car-driving.gif" alt="car-driving">
+				<div class="text-centered">
+					<p>Your vehicle is currently parking, This will take approximately 30 seconds!</p>
+				</div>
+			</div>
+			<div id="car-parked">
+				<img src="images/car-parked.png" alt="car parked">
+				<div class="text-centered">
+					<p>Your vehicle is now parked.</p>
+				</div>
+			</div>
+			<div id="summon-vehicle">
+				<img src="images/summon-vehicle.gif" alt="summoning vehicle">
+				<div class="text-centered">
+					<p>Your vehicle is on the way!</p>
+				</div>
+			</div>
+			<div id="arrived">
+				<img src="images/arrived.png" alt="vehicle has arrived">
+				<div class="text-centered">
+					<p>Your vehicle has arrived!</p>
+				</div>
+			</div>
+			<br>
+			<div class="button-spacing">
+				<div class="blueButton" id="summon-butt">
+					<h3>SUMMON VEHICLE</h3>
+				</div>
+			</div>
+			<div class="button-spacing">
+				<div class="greyButton" id="sound-horn">
+					<h3>SOUND HORN</h3>
+				</div>
+			</div>
+			<div class="button-spacing">
+				<div class="greyButton" id="flash-headlights">
+					<h3>FLASH HEADLIGHTS</h3>
+				</div>
+			</div>
+		</div>
+	</div>								<!--MAIN PAGE ENDS HERE!-->
+	<div id="RSS-FEED">					<!--RSS-FEED LATEST NEWS PAGE STARTS-->
+		<nav>
+			<a class="main-menu" id="main-menu2" href="#"><img src="images/menu.png" alt="menu"></a>
+		</nav>
+		<div class="navm" id="navm2">	
+			<div class="close-icon" id="close-icon2">
+				<img src="images/close.png" alt="close-menu">
+			</div>
+			<a href="#" id="latest-news-button2">Latest News</a>
+			<hr>
+			<a href="#" id="dashboard-button2">Dashboard</a>
+			<hr>
+			<a href="index.html">Log Out</a>
+		</div>
+		<div class="content-container">
+			<div class="text-centered">
+				<h2>LATEST NEWS</h2>
+				<p>Check out the latest news from FORD below!</p>
+			</div>
+			<iframe width="100%" height="750" frameborder="0" class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fmedia.ford.com%2Fcontent%2Ffordmedia%2Ffna%2Fus%2Fen%2Fnews.rss&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+		</div>
+	</div>								<!--RSS-FEED LATEST NEWS PAGE ENDS-->
+</body>
+</html>
